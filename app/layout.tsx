@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "QnFLeads - Qualify Leads, Filter Junk, Automate Outreach",
   description: "Transform your lead generation with intelligent forms, automated scoring, and AI-powered outreach.",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({

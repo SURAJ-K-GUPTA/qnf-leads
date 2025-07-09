@@ -2,9 +2,9 @@
 
 import type React from "react"
 
+import { createContext, useContext, useEffect, useState } from "react"
 import { supabase } from "./supabase"
 import type { User } from "@supabase/supabase-js"
-import { createContext, useContext, useEffect, useState } from "react"
 
 interface AuthContextType {
   user: User | null
@@ -17,8 +17,8 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType>({
   user: null,
   loading: true,
-  signIn: async () => {},
-  signUp: async () => {},
+  signIn: async () => ({}),
+  signUp: async () => ({}),
   signOut: async () => {},
 })
 
